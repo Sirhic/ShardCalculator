@@ -139,7 +139,7 @@ namespace ShardCalculator
         /// <returns>The total experience for <paramref name="level"/></returns>
         private double calculateExperience(double level)
         {
-            return ((50.0 / 3.0) * (Math.Pow(level, 3) - (6 * Math.Pow(level, 2)) + (17 * level) - 12));
+            return Math.Floor((50.0 / 3.0) * (Math.Pow(level, 3) - (6 * Math.Pow(level, 2)) + (17 * level) - 12));
         }
     }
 }
